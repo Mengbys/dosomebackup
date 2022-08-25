@@ -1,0 +1,6 @@
+# need absolute path
+target:
+  - '/home/lxh/workspace/ut/backup-test/important-files'
+  - '/home/lxh/workspace/ut/backup-test/notes'
+  - '/home/lxh/workspace/ut/backup-test/passwords'
+backup_dir: '/home/lxh/workspace/ut/backup-test/bf'
