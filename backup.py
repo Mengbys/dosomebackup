@@ -30,10 +30,11 @@ if not os.path.exists(backup_dir):
 
 
 # output file
-backup_file = '{0}/backup-{1}.zip'.format(backup_dir, time.strftime('%Y%m%d%H%M%S'))
+filename = 'backup-{0}.zip'.format(time.strftime('%Y%m%d%H%M%S'))
+filename_full = backup_dir + '/' + filename
 
 # compress command
-command = 'zip -r {0} {1}'.format(backup_file, ' '.join(target))
+command = 'zip -r {0} {1}'.format(filename_full, ' '.join(target))
 
 
 if check:
@@ -44,6 +45,12 @@ if check:
 
 if os.system(command) == 0:
     print('backup.py: Info: Successful back up to', backup_dir)
+
+    # delete the old backup files
+    for file in os.listdir(backup_dir):
+        if file != filename:
+            os.remove(backup_dir + '/' + file)
+
 else:
     print('backup.py: Error: Can not execute `zip` command.')
 
