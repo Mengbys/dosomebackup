@@ -1,0 +1,15 @@
+  adding: home/lxh/workspace/ut/backup-test/important-files/ (stored 0%)
+  adding: home/lxh/workspace/ut/backup-test/important-files/a2.data (stored 0%)
+  adding: home/lxh/workspace/ut/backup-test/important-files/a.data (stored 0%)
+  adding: home/lxh/workspace/ut/backup-test/important-files/a1.data (stored 0%)
+  adding: home/lxh/workspace/ut/backup-test/notes/ (stored 0%)
+  adding: home/lxh/workspace/ut/backup-test/notes/n2.txt (stored 0%)
+  adding: home/lxh/workspace/ut/backup-test/notes/n1.txt (stored 0%)
+  adding: home/lxh/workspace/ut/backup-test/notes/n.txt (stored 0%)
+  adding: home/lxh/workspace/ut/backup-test/passwords/ (stored 0%)
+  adding: home/lxh/workspace/ut/backup-test/passwords/pw1.txt (stored 0%)
+  adding: home/lxh/workspace/ut/backup-test/passwords/pw.txt (stored 0%)
+  adding: home/lxh/workspace/ut/backup-test/passwords/pw2.txt (stored 0%)
+backup.py: Info: Current time: 2022-08-26 11:07:01.
+backup.py: Info: Start backup operation.
+backup.py: Info: Successful back up to /home/lxh/workspace/ut/backup-test/bf.

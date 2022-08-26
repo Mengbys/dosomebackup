@@ -4,9 +4,11 @@ import time
 
 check = 0
 
-config_file = './config.yaml'
+dir_path = os.path.dirname(os.path.realpath(__file__))
+config_file = dir_path + '/' + 'config.yaml'
 
 
+print('backup.py: Info: Current time: {0}.'.format(time.strftime('%Y-%m-%d %H:%M:%S'))) 
 print('backup.py: Info: Start backup operation.') 
 
 
@@ -44,7 +46,7 @@ if check:
 
 
 if os.system(command) == 0:
-    print('backup.py: Info: Successful back up to', backup_dir)
+    print('backup.py: Info: Successful back up to {0}.'.format(backup_dir))
 
     # delete the old backup files
     for file in os.listdir(backup_dir):
