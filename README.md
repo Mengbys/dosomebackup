@@ -55,4 +55,4 @@ $ python backup.py  # 如果python不行就换成python3
 ## TODO
 
 - [ ] YAML配置文件中加一个最大备份数量的参数
-- [ ] 实现定时执行脚本
+- [x] 实现定时执行脚本
